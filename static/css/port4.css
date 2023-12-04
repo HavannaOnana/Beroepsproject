@@ -1,0 +1,104 @@
+body {
+  background-image: url("/static/images/rock leebackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: Din;
+  src: url(/static/fonts/DIN\ Bold.ttf);
+}
+.info {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  font-family: Din;
+  align-items: center;
+  margin-top: 24%;
+}
+
+.content {
+  display: flex;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-family: Din;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav,
+.nav-item {
+  display: flex;
+  font-family: Din;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  color: white;
+  width: 645px;
+  cursor: pointer;
+  margin-left: 35%;
+  margin-top: -42%;
+}
+
+.nav-item {
+  flex-direction: row-reverse;
+  font-size: 0.8999rem;
+  line-height: 1rem;
+  align-items: center;
+  min-width: 120px;
+  justify-content: space-between;
+  transition: all 80ms ease;
+}
+.nav-item.active {
+  color: white;
+  text-shadow: 0 0 3px hsla(222, 100%, 70%, 0.7);
+}
+.nav-item:not(.active):hover {
+  color: hsl(201, 98%, 33%);
+}
+.nav-item:hover > .icon .subicon {
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  top: -16px;
+  right: -16px;
+  border-color: white;
+}
+.nav-item a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1ch;
+}
+.nav-item .icon {
+  padding: 1ch;
+  position: relative;
+  margin-right: 123px;
+}
+.nav-item .icon > svg {
+  max-width: 16px;
+}
+
+.vacatures {
+  display: flex;
+  flex-direction: column;
+  font-family: Din;
+  color: white;
+  margin-top: 19%;
+  margin-left: 75%;
+}
+
+.vacatures, img {
+  border: white solid 2px;
+  width: 300px;
+  border-radius: 5px;
+  size: 20px;
+}/*# sourceMappingURL=port4.css.map */
